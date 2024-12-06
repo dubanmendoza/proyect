@@ -1,0 +1,82 @@
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    .boton {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Para que los bordes se fusionen */
+    margin: 20px 0; /* Espacio arriba y abajo de la tabla */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Bordes de las celdas */
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo para el encabezado */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo para filas pares */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+.container {
+    margin: 20px; /* Espacio alrededor del contenedor */
+}
+
+.btn {
+    margin: 5px; /* Espacio entre botones */
+}
+
+.btn {
+    display: inline-block; /* Para que los botones se alineen correctamente */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 5px; /* Espacio entre botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.btn-regresar {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto */
+}
+
+.btn-generar {
+    background-color: #28a745; /* Color de fondo verde */
+    color: white; /* Color del texto */
+}
+
+.btn-imprimir {
+    background-color: #ffc107; /* Color de fondo amarillo */
+    color: black; /* Color del texto */
+}
+
+.btn-regresar:hover {
+    background-color: #0056b3; /* Color de fondo azul más oscuro al pasar el mouse */
+}
+
+.btn-generar:hover {
+    background-color: #218838; /* Color de fondo verde más oscuro al pasar el mouse */
+}
+
+.btn-imprimir:hover {
+    background-color: #e0a800; /* Color de fondo amarillo más oscuro al pasar el mouse */
+}

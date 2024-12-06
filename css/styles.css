@@ -1,0 +1,143 @@
+/* Reinicio básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Color de texto principal */
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    background-color: #f7f9fc; /* Fondo neutro general */
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(90deg, #0056b3, #2ECC71); /* Azul y verde profesional */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #1B263B; /* Azul oscuro para contraste */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #2ECC71; /* Verde brillante al pasar el mouse */
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Contenedor principal */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(120deg, #f7f9fc, #e3f2fd, #c8e6c9); /* Mezcla de colores claros */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: #333; /* Texto oscuro */
+}
+
+.intro-text {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    background: linear-gradient(140deg, #04ff9b, #313fff); /* Mezcla suave de blanco y azul pastel */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+    color: #ffffff; /* Azul oscuro profesional para el texto */
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-text:hover {
+    transform: translateY(-3px); /* Efecto flotante al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Realce de la sombra */
+}
+
+
+/* Imagen introductoria */
+.intro-image img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Pie de página */
+.footer {
+    background: linear-gradient(90deg, #1B263B, #4CAF50); /* Azul oscuro y verde */
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección alterna */
+.section-alt {
+    background: linear-gradient(120deg, #e0f7fa, #58f40a); /* Verde claro y turquesa */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .intro-image img {
+        max-width: 200px;
+    }
+}
+
